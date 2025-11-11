@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-size: 3vh;
+    margin-top: -20px;
+}
+
+#about {
+    text-align: center;
+}

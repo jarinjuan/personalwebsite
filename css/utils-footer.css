@@ -1,0 +1,63 @@
+@-webkit-keyframes Gradient { 0%{background-position:0% 91%} 50%{background-position:100% 10%} 100%{background-position:0% 91%} }
+@-moz-keyframes Gradient { 0%{background-position:0% 91%} 50%{background-position:100% 10%} 100%{background-position:0% 91%} }
+@keyframes Gradient { 0%{background-position:0% 91%} 50%{background-position:100% 10%} 100%{background-position:0% 91%} }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+footer h3 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 40vh;
+    margin: 10vh 0 0.1vh 0;
+    letter-spacing: 0.2vw;
+    background: linear-gradient(270deg, #ac15ff, #ffea15);
+    background-size: 150% 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+}
+
+.social-links { display: flex; justify-content: space-between; list-style-type: none; font-size: 4vh; width: 60%; max-width: 800px; padding: 0; margin: 0; }
+.social-links li { display: inline-block; margin: 0; width: auto; text-indent: 0; }
+.social-links a { color: #ddd; text-decoration: none; transition: all .5s ease-in-out; display: inline-block; width: 7vw; }
+.social-links i { font-size: 5vh; }
+.social-links [title="Instagram"]:hover { color: rgb(255, 98, 13); }
+.social-links [title="GitHub"]:hover { color: rgb(248, 224, 255); }
+.social-links [title="LinkedIn"]:hover { color: rgb(0,119,181); }
+.social-links [title="Contact"]:hover { color: rgb(223, 196, 102); }
+
+::-webkit-scrollbar { 
+    width: 12px; 
+    height: 12px; 
+}
+
+::-webkit-scrollbar-track { 
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb { 
+    background-color: #000; 
+    border-radius: 0;
+    border: 0; 
+}
+
+::-webkit-scrollbar-thumb:hover { 
+    background-color: #111; 
+}
+
+html { 
+    scrollbar-width: thin; 
+    scrollbar-color: #000 transparent; 
+}
