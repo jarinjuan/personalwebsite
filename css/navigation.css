@@ -96,15 +96,17 @@ a:focus {
     animation: not-checked-anim .5s both;
     transition: .5s;
     z-index: 1000;
+    pointer-events: none;
 }
 
 #menu-toggle:checked + #trigger + #burger + #menu {
     animation: checked-anim 5s ease both;
     background-color: black;
+    pointer-events: auto;
 }
 
-#menu-toggle:checked + #trigger ~ #menu > li,
-a {
+#menu-toggle:checked + #trigger + #burger + #menu > li,
+#menu-toggle:checked + #trigger + #burger + #menu a {
     display: block;
 }
 
